@@ -1,0 +1,7 @@
+sudo: required
+services:
+  - docker
+
+script:
+  - docker build -t viktormishyn/travis_ci .
+  - docker images viktormishyn/travis_ci
